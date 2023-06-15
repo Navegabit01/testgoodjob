@@ -1,4 +1,4 @@
-function mergeSort<T>(arr: T[]): T[] {
+const mergeSort = <T>(arr: T[]): T[] => {
   if (!Array.isArray(arr)) {
     throw new Error('Input is not an array');
   }
@@ -14,7 +14,7 @@ function mergeSort<T>(arr: T[]): T[] {
   return merge(mergeSort(leftHalf), mergeSort(rightHalf));
 }
 
-function merge<T>(leftHalf: T[], rightHalf: T[]): T[] {
+const merge = <T>(leftHalf: T[], rightHalf: T[]): T[] => {
   if (!Array.isArray(leftHalf) || !Array.isArray(rightHalf)) {
     throw new Error('Input is not an array');
   }
