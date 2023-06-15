@@ -5,7 +5,7 @@ def merge_arrays(integer_list1: list, integer_list2: list) -> list:
     merge_list: list = []
     try:
         merge_list = integer_list1 + integer_list2
-        merge_list = list(map(lambda x: int(x), merge_list))
+        merge_list = list(map(int, merge_list))
         merge_list.sort()
     except Exception as errors:
         # Manage any errors maybe in sentry
