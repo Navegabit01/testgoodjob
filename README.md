@@ -33,40 +33,26 @@ Install my-project with pip
   pip install -r requirements.txt
 
 ```
-    
-## Run Locally
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-```bash
-  ./start.sh
-```
-
 
 ## Indications:
-3 - Response: 
-- Node.__init__(self, value): Esta operación tiene una complejidad de tiempo constante O(1), ya que simplemente asigna el valor value a la variable self.value y establece self.left_child y self.right_child en None.
+3 - Awnser: 
+- Node.__init__(self, value): This operation has constant O(1) time complexity, since it simply assigns value to the variable self.value and sets self.left_child and self.right_child to None.
 
-- BinaryTree.__init__(self): Esta operación también tiene una complejidad de tiempo constante O(1), ya que simplemente establece self.root en None.
+- BinaryTree.__init__(self): This operation also has O(1) constant time complexity, since it simply sets self.root to None.
 
-- BinaryTree.insert(self, value): La complejidad de esta operación depende de la altura del árbol. En el peor de los casos, si el árbol está completamente desequilibrado, la complejidad sería O(n), donde n es el número de nodos en el árbol. Sin embargo, en promedio, la complejidad es O(log n) para árboles balanceados.
+- BinaryTree.insert(self, value): The complexity of this operation depends on the height of the tree. In the worst case, if the tree is completely unbalanced, the complexity would be O(n), where n is the number of nodes in the tree. However, on average, the complexity is O(log n) for balanced trees.
 
-- BinaryTree._insert(self, value, current_node): Esta operación también tiene una complejidad de O(log n) en promedio para árboles balanceados, ya que se realiza una búsqueda binaria para encontrar la ubicación correcta para insertar el nuevo nodo.
+- BinaryTree._insert(self, value, current_node): This operation also has a complexity of O(log n) on average for balanced trees, since a binary search is performed to find the correct location to insert the new node.
 
-- BinaryTree.find(self, value): La complejidad de esta operación también depende de la altura del árbol. En el peor de los casos, si el árbol está completamente desequilibrado, la complejidad sería O(n), donde n es el número de nodos en el árbol. Sin embargo, en promedio, la complejidad es O(log n) para árboles balanceados.
+- BinaryTree.find(self, value): The complexity of this operation also depends on the height of the tree. In the worst case, if the tree is completely unbalanced, the complexity would be O(n), where n is the number of nodes in the tree. However, on average, the complexity is O(log n) for balanced trees.
 
-- BinaryTree._find(self, value, current_node): Esta operación también tiene una complejidad de O(log n) en promedio para árboles balanceados, ya que se realiza una búsqueda binaria para encontrar el nodo con el valor value.
+- BinaryTree._find(self, value, current_node): This operation also has a complexity of O(log n) on average for balanced trees, since a binary search is performed to find the node with the value value.
 
-- BinaryTree.print_tree(self): Esta operación tiene una complejidad de O(n), donde n es el número de nodos en el árbol, ya que se recorre todo el árbol para imprimir los valores de los nodos.
+- BinaryTree.print_tree(self): This operation has a complexity of O(n), where n is the number of nodes in the tree, since the entire tree is recorded to print the values ​​of the nodes.
 
-- BinaryTree._print_tree(self, current_node): Esta operación también tiene una complejidad de O(n), donde n es el número de nodos en el árbol, ya que se recorre todo el árbol para imprimir los valores de los nodos.
+- BinaryTree._print_tree(self, current_node): This operation also has a complexity of O(n), where n is the number of nodes in the tree, since the entire tree is recorded to print the values ​​of the nodes.
 
-4 - Response:
-La búsqueda binaria tiene la ventaja de que reduce significativamente el número de comparaciones necesarias para encontrar un elemento en una lista ordenada. En una búsqueda secuencial, se debe comparar cada elemento de la lista con el objetivo hasta encontrar una coincidencia o llegar al final de la lista. En una búsqueda binaria, se divide la lista en dos mitades y se compara el objetivo con el elemento en el medio. Si el objetivo es menor que el elemento en el medio, se busca en la mitad izquierda de la lista, y si es mayor, se busca en la mitad derecha. De esta manera, se descarta la mitad de la lista en cada iteración, lo que reduce significativamente el número de comparaciones necesarias.
+4 - Awnser:
+Binary search has the advantage that it significantly reduces the number of comparisons required to find an item in an ordered list. In a sequential search, each item in the list must be compared against the target until it finds a match or reaches the end of the list. In a binary search, the list is divided into two halves and the target is compared to the element in the middle. If the target is less than the element in the middle, the left half of the list is searched, and if it is greater, the right half is searched. In this way, half the list is discarded at each iteration, which significantly reduces the number of comparisons required.
 
-En cuanto a la complejidad computacional, la búsqueda binaria tiene una complejidad de O(log n), mientras que la búsqueda secuencial tiene una complejidad de O(n). Esto significa que la búsqueda binaria es mucho más eficiente en términos de tiempo de ejecución para listas grandes, ya que el número de comparaciones necesarias crece mucho más lentamente que en una búsqueda secuencial.
-
-
+In terms of computational complexity, binary search has a complexity of O(log n), while sequential search has a complexity of O(n). This means that binary search is much more efficient in terms of execution time for large lists, since the number of comparisons required grows much more slowly than in a sequential search.
