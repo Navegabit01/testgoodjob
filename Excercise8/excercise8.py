@@ -8,7 +8,7 @@ def binary_search_recursive(list1: list, target1: int) -> bool:
 
     if not all(isinstance(x, int) for x in arr):
         raise TypeError(LIST_INT_ELEMENT_ERROR)
-    return _binary_search_recursive(list1, target1, 0, len(arr) - 1)
+    return _binary_search_recursive(list1, target1, 0, len(list1) - 1)
 
 
 def _binary_search_recursive(derivate_list: list, derivate_target: int, left, right):
